@@ -19,7 +19,7 @@ var saveInfo = function (response) {
 
 		userInfo[i]['name'] = nameUpper(response.results[i].name.first) + " " + nameUpper(response.results[i].name.last);
 		userInfo[i]['email'] = response.results[i].email;
-		userInfo[i]['city'] = response.results[i].location.city; 
+		userInfo[i]['city'] = nameUpper(response.results[i].location.city); 
 		userInfo[i]['cell'] = response.results[i].cell;
 		userInfo[i]['address'] = response.results[i].location.street; 
 		
